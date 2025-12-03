@@ -63,7 +63,6 @@ Streamlit Cloud will automatically:
 ---
 
 ## 📁 Project Structure
-.
 ├── app.py
 ├── utils.py
 ├── home_page.py
