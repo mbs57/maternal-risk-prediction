@@ -20,27 +20,30 @@ This tool helps health professionals assess patient status and understand *why* 
 
 ---
 
-### 🧠 **Explainability (XAI)**
-Each prediction includes:
+## 🧠 Explainability (XAI)
 
-- Feature impact **bar plot**
-- Waterfall plot showing step-by-step risk shift
-- Top 3 contributing features summarized in text
-- Clear “in simple terms” explanation
+Every prediction includes:
+
+- Feature impact **Bar Plot**
+- **Waterfall Plot** showing how each feature shifts the risk up or down
+- Top 3 contributing factors explained in plain language
+- Easy-to-understand interpretation showing what increased or decreased risk
 
 ---
 
-### 📄 **Downloadable PDF Report**
-The app generates a professional PDF including:
+## 📄 PDF Report Generation
 
-- Risk level (color-coded)
-- Clear summary
-- Class probability table
-- Input features used by the model
+The app produces a polished PDF report including:
+
+- Color-coded **risk label**
+- Model confidence
+- Probabilities for each class
 - Top SHAP feature contributions
-- ⚠ For **high-risk predictions**, the PDF includes a **strong warning** advising the patient to consult a doctor immediately.
+- All input values used for the prediction
+- ⚠ **High-risk warning** — advising the patient to consult a doctor immediately
 
 ---
+
 ## 📸 Screenshots
 
 Below are some key screens from the application:
@@ -54,89 +57,107 @@ Below are some key screens from the application:
 ### 🩺 Clinical / Pregnancy Model
 <img src="Clinical_Model.png" width="650px">
 
-### 📄 XAI (Waterfall)
+### 🧠 SHAP Waterfall (Explainability)
 <img src="Waterfall.png" width="650px">
 
-### 📄 Generated PDF Report (Preview)
-<img src="PDF Report.png" width="650px">
+### 📄 PDF Report (Preview)
+<img src="PDF_Report.png" width="650px">
 
-## 🚀 Deploy on Streamlit Cloud
+---
 
-If you want to deploy this project yourself:
+## 🚀 Deployment on Streamlit Cloud
 
-1. Push the repo to GitHub  
-2. Go to https://share.streamlit.io  
+You can deploy this project easily using Streamlit Cloud:
+
+1. Push the repository to GitHub  
+2. Visit: https://share.streamlit.io  
 3. Click **New App**
-4. Select:
+4. Choose:
    - Repository: `mbs57/maternal-risk-prediction`
    - Branch: `main`
    - Main file: `app.py`
-5. Deploy!
+5. Deploy 🎉
 
-Streamlit Cloud will automatically:
-- install dependencies from `requirements.txt`
-- run the app
-- host it publicly
+Streamlit Cloud automatically:
+- Installs dependencies from `requirements.txt`
+- Launches your app
+- Gives you a shareable public URL
 
 ---
-
 ## 📁 Project Structure
-├── app.py
-├── utils.py
-├── home_page.py
-├── general_model_page.py
-├── pregnancy_model_page.py
+maternal-risk-prediction/
 │
-├── best_xgbc_model2.pkl # Pregnancy model
+├── app.py # Main entry point for Streamlit app
+├── utils.py # Helper utilities and PDF generation
+├── home_page.py # Home screen UI logic
+├── general_model_page.py # General maternal model logic/UI
+├── pregnancy_model_page.py # Pregnancy/antenatal model logic/UI
+│
+├── best_xgbc_model2.pkl # Pregnancy model (8 features)
 ├── best_xgbc_model3.pkl # General maternal model
 │
-├── requirements.txt
-└── README.md
+├── images/ # UI screenshots used in README
+│ ├── Home.png
+│ ├── General_Model.png
+│ ├── Clinical_Model.png
+│ ├── Waterfall.png
+│ └── PDF_Report.png
+│
+├── requirements.txt # Python dependencies
+└── README.md # Project documentation
 
 
 ---
 
-## 🛠 Requirements
+## 🛠 Installation & Requirements
 
 Install all dependencies using:
 
 ```bash
 pip install -r requirements.txt
 ```
+#### Main libraries used
 
-### Main libraries:
+Streamlit – UI framework
 
-streamlit
+NumPy – numerical operations
 
-numpy
+XGBoost – machine learning models
 
-xgboost
+SHAP – model explainability
 
-shap
+Matplotlib – plots
 
-matplotlib
+ReportLab – PDF generation
 
-reportlab
+Scikit-learn – preprocessing & utilities
 
-scikit-learn
+🤖 Models
 
-📊 Models
+Two offline-trained XGBoost models are included:
 
-The two models (best_xgbc_model2.pkl and best_xgbc_model3.pkl) are trained offline and loaded automatically when the app runs.
+Pregnancy Model
 
-Pregnancy Model → 8 features
+8 carefully selected antenatal features
 
-General Maternal Model → multiple vitals + clinical history
+Optimized for clinical screening in antenatal care
+
+General Maternal Model
+
+Includes vitals, clinical history, and diabetes indicators
+
+Designed for general health risk assessment
+
+Both models load automatically when the application starts.
 
 👤 Author
 
 Mrinal Basak Shuvo
-Student | Developer | ML Enthusiast
+Student • Developer • ML Enthusiast
 GitHub: https://github.com/mbs57
 
 ⚠ Disclaimer
 
-This tool is for decision support only.
-It is not a replacement for medical diagnosis.
-High-risk results should be followed by immediate consultation with a qualified healthcare professional. 
-
+This tool is intended for decision support only.
+It is not a medical diagnostic system.
+Any high-risk prediction should be followed by immediate consultation with a qualified healthcare professional.
