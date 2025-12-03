@@ -85,7 +85,7 @@ Install all dependencies using:
 
 ```bash
 pip install -r requirements.txt
-
+```
 
 Main libraries:
 
