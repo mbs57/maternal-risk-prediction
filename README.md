@@ -54,6 +54,9 @@ Below are some key screens from the application:
 ### 🩺 Clinical / Pregnancy Model
 <img src="Clinical_Model.png" width="650px">
 
+### 📄 XAI (Waterfall)
+<img src="Waterfall.png" width="650px">
+
 ### 📄 Generated PDF Report (Preview)
 <img src="PDF Report.png" width="650px">
 
