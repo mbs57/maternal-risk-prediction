@@ -133,7 +133,7 @@ Both models load automatically when the application starts.
 
 👤 Author
 
-###Mrinal Basak Shuvo
+###  Mrinal Basak Shuvo
 Student • Developer • ML Enthusiast
 GitHub: https://github.com/mbs57
 
