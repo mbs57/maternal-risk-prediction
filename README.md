@@ -41,6 +41,21 @@ The app generates a professional PDF including:
 - ⚠ For **high-risk predictions**, the PDF includes a **strong warning** advising the patient to consult a doctor immediately.
 
 ---
+## 📸 Screenshots
+
+Below are some key screens from the application:
+
+### 🏠 Home Page
+<img src="Home.png" width="650px">
+
+### 🧮 General Maternal Model
+<img src="General_Model.png" width="650px">
+
+### 🩺 Clinical / Pregnancy Model
+<img src="Clinical_Model.png" width="650px">
+
+### 📄 Generated PDF Report (Preview)
+<img src="PDF Report.png" width="650px">
 
 ## 🚀 Deploy on Streamlit Cloud
 
