@@ -84,30 +84,6 @@ Streamlit Cloud automatically:
 - Gives you a shareable public URL
 
 ---
-## 📁 Project Structure
-maternal-risk-prediction/
-│
-├── app.py # Main entry point for Streamlit app
-├── utils.py # Helper utilities and PDF generation
-├── home_page.py # Home screen UI logic
-├── general_model_page.py # General maternal model logic/UI
-├── pregnancy_model_page.py # Pregnancy/antenatal model logic/UI
-│
-├── best_xgbc_model2.pkl # Pregnancy model (8 features)
-├── best_xgbc_model3.pkl # General maternal model
-│
-├── images/ # UI screenshots used in README
-│ ├── Home.png
-│ ├── General_Model.png
-│ ├── Clinical_Model.png
-│ ├── Waterfall.png
-│ └── PDF_Report.png
-│
-├── requirements.txt # Python dependencies
-└── README.md # Project documentation
-
-
----
 
 ## 🛠 Installation & Requirements
 
