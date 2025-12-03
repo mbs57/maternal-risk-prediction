@@ -108,6 +108,8 @@ ReportLab – PDF generation
 
 Scikit-learn – preprocessing & utilities
 
+---
+
 🤖 Models
 
 Two offline-trained XGBoost models are included:
@@ -126,11 +128,16 @@ Designed for general health risk assessment
 
 Both models load automatically when the application starts.
 
+---
+
+
 👤 Author
 
 ###Mrinal Basak Shuvo
 Student • Developer • ML Enthusiast
 GitHub: https://github.com/mbs57
+
+---
 
 ⚠ Disclaimer
 
