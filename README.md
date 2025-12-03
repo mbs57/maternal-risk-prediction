@@ -112,13 +112,13 @@ Scikit-learn – preprocessing & utilities
 
 Two offline-trained XGBoost models are included:
 
-Pregnancy Model
+##Pregnancy Model
 
 8 carefully selected antenatal features
 
 Optimized for clinical screening in antenatal care
 
-General Maternal Model
+##General Maternal Model
 
 Includes vitals, clinical history, and diabetes indicators
 
@@ -128,7 +128,7 @@ Both models load automatically when the application starts.
 
 👤 Author
 
-Mrinal Basak Shuvo
+###Mrinal Basak Shuvo
 Student • Developer • ML Enthusiast
 GitHub: https://github.com/mbs57
 
