@@ -87,7 +87,7 @@ Install all dependencies using:
 pip install -r requirements.txt
 ```
 
-Main libraries:
+### Main libraries:
 
 streamlit
 
