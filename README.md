@@ -5,7 +5,7 @@ This tool helps health professionals assess patient status and understand *why* 
 
 ---
 **Try the live app here:**  
-[https://phishing-app.streamlit.app/]([https://phishing-app.streamlit.app](https://maternal-risk-prediction.streamlit.app/)
+[https://phishing-app.streamlit.app/]([https://phishing-app.streamlit.app](https://maternal-risk-prediction.streamlit.app/)]
 
 ---
 ## 🌟 Features
